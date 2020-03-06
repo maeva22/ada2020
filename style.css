@@ -1,10 +1,14 @@
 body {
-background-color:rgba(163, 142, 142, 0.363);
+background-color:#ffffff;
+    
+}
+#tete{
+    background-image:url("etudes sup.jpg");
 }
 #page{
-        background-color:255;
-        margin : 20px;
-        border-radius: 5px;
+        margin : 10px;
+      color:#004d4d;
+      
 }
 p 
 {
@@ -85,6 +89,7 @@ h2
 
 h3{
     font-size: 25px;
+    color: #e6e600;
 }
 .card-title
 {
@@ -97,10 +102,25 @@ footer{
     bottom: 0;
     right:0;
     left:0;
-    background-color: #EBEBEB; 
+    background-color: #e6e6e6;
     text-align: center;
 }
 ul{
    
      font-size: 25px;
 }
+ .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor:middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    
