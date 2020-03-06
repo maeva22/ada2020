@@ -1,0 +1,123 @@
+p 
+{
+    font-family: Avantgarde;
+    font-size: 25px;
+    font-style: oblique;
+}
+        
+#logo{
+    background-color: #29a329;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+	padding-left: 100px;
+    border: 5px solid black;
+}
+
+.section_bas
+{
+ border-top: 1px solid grey;   
+ background-color: #FBFDF2;
+}
+
+#conteneur1
+{
+    height: 100px;
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-around;
+    align-items: center;
+}
+#conteneur2
+{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+h1
+{
+   font-style: oblique;
+   font-family: Avantgarde;
+   color: #00460e;
+   font-weight: bold;
+   font-size: 50px
+   
+}
+h2
+{
+   font-style: oblique;
+   font-family: Avantgarde;
+   color: #007214;
+   font-weight: bold;
+   font-size: 40px
+   
+}
+.sponsors
+{
+    font-style: oblique;
+    font-family: Avantgarde;
+    color: #007214;
+    text-align: left;
+}
+.texte
+{
+    font-size: 25px;
+    font-style: oblique;
+}
+.imageflottante
+{
+    float: left;
+}
+.lien:hover
+{
+    text-decoration: none;
+    color: #00C14F;
+}
+.lien:visited
+{   
+    font-style: italic;
+    color: #007200;
+}
+.dangers
+{
+ border-top: 1px green dashed;
+ border-bottom: 1px green dashed;
+
+}
+.imageflottante2
+{
+    float: left;
+}
+
+
+#quiz{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-content: center;
+}
+
+.card-text{
+    font-size: 25px;
+    color: #804800;
+}
+
+h3{
+    font-size: 25px;
+}
+.card-title
+{
+    font-size: 35px;
+    color:#B89241;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    right:0;
+    left:0;
+    background-color: #EBEBEB; 
+    text-align: center;
+}
