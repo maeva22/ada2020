@@ -3,15 +3,20 @@
 <html>
 
 <head>
-    <title> ETLPV </title>
+    <title>  ETLPV  </title>
 
-     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/carousel/">
+
+    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title></title>
     <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href="carousel.css" rel="stylesheet">
 </head>
 <body id="tete">
 
@@ -34,78 +39,89 @@
             <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:200px" id="presentation">
             </div>
         </section> 
-        <section>
-            <center>
-            <h1>Études supérieurs</h1>
-            <h2>Laquelle des formations est faites pour vous ?</h2>
-                <br>
-                <p id="introduction">
-                   Études courtes ou études longues ? 
+
+
+<div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 font-italic">Laquelle des formations est faites pour vous ?</h1>
+      <p id="introduction" class="lead my-3">Études courtes ou études longues ?</p><br> 
                    À l'université, au lycée ou dans une école spécialisée ?</br>
                    Après le bac, le choix des études supérieures nécessite de bien s'informer, et de réfléchir à son projet professionnel.</br>
                    Certaines formations durent 2 à 3 ans après le bac. D'autres s'étalent sur 5 ans minimum. Voici un guide des choix 
-                   d'études possibles après le bac.
-                </p>
-            </center>
-        </section>
-        <section>
-            <center>
-            <p class="formations">
-                Une licence ou un DUT à l'université, un BTS au lycée, une école spécialisée pour se former aux professions paramédicales, 
-                suivre des études artistiques en école d'art :
-                pour choisir ses études après le bac, il faut savoir ce qui correspond à sa personnalité, et à son projet professionnel.
-            </p>
-            </center>
-        </section>
-        </br>
-        <section>
-            <center>
-                <h3><a href="https://www.studyrama.com/formations/filieres/universite/">UNIVERSITÉ</a> : QUELLES ÉTUDES APRÈS LE BAC ?</h3>
-            <p class="formations">
-                L'université permet d'envisager des études courtes après le bac, en 2 ou 3 ans, mais aussi des études plus longues.
+                   d'études possibles après le bac.</div><br>
+                    Une licence ou un DUT à l'université, un BTS au lycée, une école spécialisée pour se former aux professions paramédicales, 
+                    suivre des études artistiques en école d'art :
+                    pour choisir ses études après le bac, il faut savoir ce qui correspond à sa personnalité, et à son projet professionnel.
+            </p></p>
+      <!--<p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>-->
+    </div>
+</div>
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">UNIVERSITÉ</h3>
+          <p class="card-text mb-auto">L'université permet d'envisager des études courtes après le bac, en 2 ou 3 ans, mais aussi des études plus longues.
 
                 Pour ceux qui envisagent 2 ans d'études après le bac, le DUT, Diplôme universitaire de technologie, dispense une formation sur 2 ans après le bac,
                 à la fois théorique et pratique. Il est proposé dans les IUT (Instituts universitaires de technologie), à l'université.
                 Travaux de groupes, stages, projet... ces 2 années d'études après le bac permettent d'envisager une poursuite d'études : en licence professionnelle (en 1 an après le DUT),
                 mais également en licence, puis master, à l'université.
                 En 3 ans, la licence représente le premier palier pour accéder au master.
-                Ce diplôme universitaire s'obtient en 2 ans d'études après la licence et correspond donc à un bac + 5.
-            </p>
-            </center>
-        </section>
-        </br>
-        <section>
-            <center>
-                <h3> <a href="http://www.onisep.fr/Choisir-mes-etudes/Apres-le-bac/Organisation-des-etudes-superieures/Les-BTS">BTS</a> (BREVET DE TECHNICIEN SUPÉRIEUR) : 2 ANNÉES D'ÉTUDES APRÈS LE BAC</h3>
-            <p class="formations">
-                Dispensé dans les lycées, le BTS implique de suivre 2 années d'études après le bac. Pratique et tournée vers l'entreprise, grâce notamment aux stages,
-                cette formation de 2 ans après le bac permet également de poursuivre ses études en licence pro (en 1 an après le BTS), d'intégrer certaines écoles post-bac, etc.
-            </p>
-            </center>
-        </section>
-        </br>
-        <section>
-            <center>
-        <h3><a href="https://www.enseignementsup-recherche.gouv.fr/cid20182/classes-preparatoires-aux-grandes-ecoles-c.p.g.e.html">CPGE</a> (CLASSES PRÉPARATOIRES AUX GRANDES ÉCOLES) : VISER LES CONCOURS</h3>
-            <p class="formations">
-                Réparties en 3 filières (littéraires, scientifiques, économiques et commerciales) 
+                Ce diplôme universitaire s'obtient en 2 ans d'études après la licence et correspond donc à un bac + 5.</p>
+          <a href="https://www.studyrama.com/formations/filieres/universite/" class="stretched-link">Plus d'info</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        </div>
+      </div>
+    <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">BTS</h3>
+        <div class="mb-1 text-muted"> (BREVET DE TECHNICIEN SUPÉRIEUR) : 2 ANNÉES D'ÉTUDES APRÈS LE BAC</div>
+          <p class="card-text mb-auto">Dispensé dans les lycées, le BTS implique de suivre 2 années d'études après le bac. Pratique et tournée vers l'entreprise, grâce notamment aux stages,
+                cette formation de 2 ans après le bac permet également de poursuivre ses études en licence pro (en 1 an après le BTS), d'intégrer certaines écoles post-bac, etc.</p>
+          <a href="http://www.onisep.fr/Choisir-mes-etudes/Apres-le-bac/Organisation-des-etudes-superieures/Les-BTS" class="stretched-link">Plus d'info</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">CPGE</h3>
+        <div class="mb-1 text-muted"> (CLASSES PRÉPARATOIRES AUX GRANDES ÉCOLES) : VISER LES CONCOURS</div>
+          <p class="card-text mb-auto">Réparties en 3 filières (littéraires, scientifiques, économiques et commerciales) 
                 les CPGE préparent en deux ans après le bac, aux concours des grandes écoles d’ingénieurs,
                 de commerce, mais aussi des ENS (écoles normales supérieures),
                 des IEP (instituts d’études politiques) ou de l’école militaire de Saint-Cyr.
-                L’enseignement y est pluridisciplinaire et intensif. En cas d’échec aux concours, une poursuite d’études en troisième année de licence est possible.
-            </p>
-            </center>
-        </section>
-        </br>
-        <section>
-            <center>
-                <h3><a href="http://www.onisep.fr/Choisir-mes-etudes/Apres-le-bac/Organisation-des-etudes-superieures/Les-ecoles-specialisees">ÉCOLES SPÉCIALISÉES</a> : DES ÉTUDES DE 2 À 5 ANS APRÈS LE BAC</h3>
-            <p class="formations">
-                Professions paramédicales et de santé, écoles d'art, de cinéma ou d'audiovisuel : de nombreuses écoles dispensent des formations en 2, 3 ou 5 ans. Objectif :
-                apprendre un métier et se professionnaliser à travers des stages, ainsi que de nombreux projets.
-            </p>
-            </center>
-        </section>
+                L’enseignement y est pluridisciplinaire et intensif. En cas d’échec aux concours, une poursuite d’études en troisième année de licence est possible.</p>
+          <a href="https://www.enseignementsup-recherche.gouv.fr/cid20182/classes-preparatoires-aux-grandes-ecoles-c.p.g.e.html" class="stretched-link">Plus d'info</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        </div>
+      </div>
+    </div>
+        <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">ÉCOLES SPÉCIALISÉES</h3>
+        <div class="mb-1 text-muted">DES ÉTUDES DE 2 À 5 ANS APRÈS LE BAC</div>
+          <p class="card-text mb-auto">Professions paramédicales et de santé, écoles d'art, de cinéma ou d'audiovisuel : de nombreuses écoles dispensent des formations en 2, 3 ou 5 ans. Objectif :
+                apprendre un métier et se professionnaliser à travers des stages, ainsi que de nombreux projets.</p>
+          <a href="http://www.onisep.fr/Choisir-mes-etudes/Apres-le-bac/Organisation-des-etudes-superieures/Les-ecoles-specialisees" class="stretched-link">Plus d'info</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        </div>
+      </div>
+    </div>
+</div>
 
     <footer> 5ème édition ADA LOVELACE </footer>
 </body>
