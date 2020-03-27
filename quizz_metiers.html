@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>ETLPV</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+
+    <body>
+        
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #6addff;">
+            <a class="navbar-brand" href="#"> ETLPV</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-item nav-link" href="https://ada.uriel.dev/challenge/2020/G03/">Accueil</a>
+                  <a class="nav-item nav-link" href="https://ada.uriel.dev/challenge/2020/G03/sommaire.html">Sommaire</a>
+                  <a class="nav-item nav-link" href="https://ada.uriel.dev/challenge/2020/G03/quiz_metiers.php">Quiz métiers</a>
+                </div>
+            </div>
+        </nav>
+        
+        <table id="page">
+            <tr>
+                <td><h2>Test personalité</h2></td>
+            </tr>
+            <tr>
+                <td>
+				<ul id="quiz"><br/>
+				<li><h3>Vous êtes plutôt?</h3></li>
+				<form action="reponse_metiers.php" method="get">
+			            <p id="page"><input type="radio" name="personalite" value="4" />Patiente</p><br/>
+				        <p id="page"><input type="radio" name="personalite" value="5" />Organisé</p><br/>
+				        <p id="page"><input type="radio" name="personalite" value="3" />Attentive</p><br/>
+				        <p id="page"><input type="radio" name="personalite" value="1" />Expressive</p><br/>
+				        <p id="page"> <input type="radio" name="personalite" value="2" />Critique</p><br/>
+		                <li><h3>Vos centres d'intérêts?</h3></li><br/>
+			            <p id="page"><input type="radio" name="interet" value="1" />Développer vos qualités artistique</p><br/>
+				        <p id="page"><input type="radio" name="interet" value="3" />Bricoler</p><br/>
+				        <p id="page"><input type="radio" name="interet" value="2" />Faire du sport</p><br/>
+				        <p id="page"><input type="radio" name="interet" value="4" />Faire de la musique</p><br/>
+				        <p id="page"><input type="radio" name="interet" value="5" />Apprendre de nouvelle chose</p><br/>
+				        <li><h3>Ce que vous aimeriez faire?</h3></li><br/>
+				        <p id="page"><input type="radio" name="aime" value="5" />Soigner des gens</p><br/>
+				        <p id="page"><input type="radio" name="aime" value="4" />Jouer face à un public</p><br/>
+				        <p id="page"><input type="radio" name="aime" value="3" />Faire de la recherche</p><br/>
+				       <p id="page"><input type="radio" name="aime" value="2" />Pratiquer une activité sportive</p><br/>
+				       <p id="page"><input type="radio" name="aime" value="1" />Exprimer mes idées </p><br/>
+				       <input type="submit" value="Envoyer"/>
+				</form>
+				</td>
+				</tr>
+		</table>
+    </body>
+</html>

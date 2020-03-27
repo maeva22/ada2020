@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		   <title>  ETLPV  </title>
+
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/carousel/">
+
+    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title></title>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="formation.css" />
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+
+    </head>
+
+     
+    <body id="metiers">
+        
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #6addff;">
+            <a class="navbar-brand" href="#"> ETLPV</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-item nav-link" href="https://ada.uriel.dev/challenge/2020/G03/">Accueil</a>
+                  <a class="nav-item nav-link" href="https://ada.uriel.dev/challenge/2020/G03/sommaire.html">Sommaire</a>
+                  <a class="nav-item nav-link" href="https://ada.uriel.dev/challenge/2020/G03/quiz_metiers.php">Quiz métiers</a>
+                </div>
+            </div>
+        </nav>
+
+        
+        <section id="presentation">
+    <div class="w3-container w3-content w3-center w3-padding-25" style="max-width:200px" id="presentation">
+    </div> 
+        </section> 
+        <?php
+        $interet=$_GET['interet'];
+        $personalite=$_GET['personalite'];
+        $aime=$_GET['aime'];
+        $art="1";
+        $sport="2";
+        $ingegnieur="3";
+        $musique="4";
+        $medecine="5";
+         $art1=0;
+        $sport1=0;
+        $ingegnieur1=0;
+        $musique1=0;
+        $medecine1=0;
+        
+        if($art==$interet)
+        $art1=$art1+1;
+        if($art== $personalite )
+        $art1=$art1+1;
+            if($art== $aime )
+        $art1=$art1+1;
+        
+        if($sport==$interet)
+        $sport1=$sport1+1;
+        if($sport== $personalite)
+        $sport1=$sport1+1;
+        if($sport==$aime )
+        $sport1=$sport1+1;
+        
+        if($medecine==$interet)
+        $medecine1=$medecine1+1;
+        if($medecine==$personalite)
+        $medecine1=$medecine1+1;
+        if($medecine==$aime )
+        $medecine1=$medecine1+1;
+        
+        if($ingegnieur==$interet)
+        $ingegnieur1=$ingegnieur1+1;
+        if($ingegnieur==$personalite)
+        $ingegnieur1=$ingegnieur1+1;
+        if($ingegnieur==$aime )
+        $ingegnieur1=$ingegnieur1+1;
+        
+        if($musique==$interet)
+        $musique1=$musique1+1;
+         if($musique==$personalite)
+        $musique1=$musique1+1;
+         if($musique==$aime )
+        $musique1=$musique1+1;
+        
+        include ('identifiants.php');
+			$link = mysqli_connect($host,$user,$pass,$bdd);
+		if (mysqli_connect_errno())
+		{
+			echo "Failed to connect to MySQL: " . mysqli_connect_error();
+		}
+		if (!$link)
+			die('Echec   de   connexion   au   serveur   de   base   de   données   :   '   .mysqli_connect_error() . '(' . mysqli_connect_errno() . ') ');
+		
+		$query= "SET NAMES UTF8";
+			mysqli_query($link,$query);
+		$query = "SELECT metier AS metier FROM `metiers`";
+		if ($reponse = mysqli_query($link, $query)) 
+		{
+			$ligne = mysqli_fetch_array($reponse);
+			$metier = $ligne['metier'];}
+		$query = "UPDATE `metiers` SET valeur=$art1 WHERE `id`=3 ";
+		mysqli_query($link,$query);
+		$query = "UPDATE `metiers` SET valeur=$sport1 WHERE `id`=2 ";
+		mysqli_query($link,$query);
+		$query = "UPDATE `metiers` SET valeur=$medecine1 WHERE `id`=1 ";
+		mysqli_query($link,$query);
+		$query = "UPDATE `metiers` SET valeur=$musique1 WHERE `id`=4 ";
+		mysqli_query($link,$query);
+		$query = "UPDATE `metiers` SET valeur=$ingegnieur1 WHERE `id`=5 ";
+		mysqli_query($link,$query);
+			$query = "SELECT MAX(valeur) AS val FROM `metiers`";
+		if ($reponse = mysqli_query($link, $query)) 
+		{
+			$ligne = mysqli_fetch_array($reponse);
+			$val = $ligne['val'];}
+			$query = "SELECT explication AS exp FROM `metiers` WHERE valeur=$val;";
+			if ($reponse = mysqli_query($link, $query)) 
+		{
+			$ligne = mysqli_fetch_array($reponse);
+			$exp = $ligne['exp'];}
+			$query = "SELECT domaine AS dom FROM `metiers` WHERE valeur=$val";
+		if ($reponse = mysqli_query($link, $query)) 
+		{
+			$ligne = mysqli_fetch_array($reponse);
+			$dom = $ligne['dom'];
+			echo '</br></br></br></br><center><h1>Tu serai '.$dom.'!</h1></br>'.$exp;
+			echo '</br></center>';
+		mysqli_free_result($reponse);}
+		$query = "UPDATE `metiers` SET valeur=0 WHERE `id`=3 ";
+		mysqli_query($link,$query);
+		$query = "UPDATE `metiers` SET valeur=0 WHERE `id`=2 ";
+		mysqli_query($link,$query);
+		$query = "UPDATE `metiers` SET valeur=0 WHERE `id`=1 ";
+		mysqli_query($link,$query);
+		$query = "UPDATE `metiers` SET valeur=0 WHERE `id`=4 ";
+		mysqli_query($link,$query);
+		$query = "UPDATE `metiers` SET valeur=0 WHERE `id`=5 ";
+		mysqli_query($link,$query);
+
+		?>
+</br>
+</br>
+		<center><a href="https://ada.uriel.dev/challenge/2020/G03/sommaire.html" type="button" class="btn btn-outline-info">Retour</a></center>
+
+
+	</body>
+</html>
+

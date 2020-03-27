@@ -1,15 +1,32 @@
 body {
-background-color:#ffffff;
+background-color:#f8f8f8de;
+}
+
+
+#intro {
+      font-family: Gill Sans Extrabold, sans-serif;
+      font-size: xx-small;
+font-size: x-small;
+font-size: small;
+font-size: medium;
+font-size: large;
+font-size: x-large;
+font-size: xx-large;
     
 }
-#tete{
-    background-image:url("etudes sup.jpg");
-}
+
+
 #page{
         margin : 10px;
       color:#004d4d;
       
 }
+#metiers{
+    margin:20px;
+    font-size: medium;
+    font-family: Gill Sans Extrabold, sans-serif;
+}
+
 p 
 {
     font-family: Avantgarde;
@@ -21,7 +38,7 @@ h1
 {
    font-style: oblique;
    font-family: Avantgarde;
-   color:#004d4d;
+   color:#b300b3;
    font-weight: bold;
    font-size: 50px
    
@@ -123,4 +140,3 @@ ul{
           font-size: 3.5rem;
         }
       }
-    
