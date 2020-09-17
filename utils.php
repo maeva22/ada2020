@@ -1,4 +1,4 @@
-<?php
+<!--<?php
       function get_db_access(){
                 $fp = fopen( $_SERVER['DOCUMENT_ROOT']."/../db_access.txt", 'r' ); // get the contents, and echo it out.
                 $mysql_db = array();
@@ -27,4 +27,4 @@
                 return($link);
         }
 
-?>
+?>-->
